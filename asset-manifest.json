@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/elizabethfoster02.github.io/static/css/main.72c7fa8e.css",
-    "main.js": "/elizabethfoster02.github.io/static/js/main.c889084a.js",
-    "static/js/787.28cb0dcd.chunk.js": "/elizabethfoster02.github.io/static/js/787.28cb0dcd.chunk.js",
-    "static/media/headshot.jpeg": "/elizabethfoster02.github.io/static/media/headshot.7add7aa398e1c159a0ed.jpeg",
-    "static/media/twitter_PNG1.png": "/elizabethfoster02.github.io/static/media/twitter_PNG1.ffeb9d573f57a1c89d3d.png",
-    "static/media/linkedin.png": "/elizabethfoster02.github.io/static/media/linkedin.ba884e1f9ad4362348c1.png",
-    "static/media/instagram.png": "/elizabethfoster02.github.io/static/media/instagram.5728b7be45fc143b27b0.png",
-    "index.html": "/elizabethfoster02.github.io/index.html",
-    "main.72c7fa8e.css.map": "/elizabethfoster02.github.io/static/css/main.72c7fa8e.css.map",
-    "main.c889084a.js.map": "/elizabethfoster02.github.io/static/js/main.c889084a.js.map",
-    "787.28cb0dcd.chunk.js.map": "/elizabethfoster02.github.io/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.72c7fa8e.css",
+    "main.js": "/static/js/main.2c35567b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/headshot.jpeg": "/static/media/headshot.7add7aa398e1c159a0ed.jpeg",
+    "static/media/twitter_PNG1.png": "/static/media/twitter_PNG1.ffeb9d573f57a1c89d3d.png",
+    "static/media/linkedin.png": "/static/media/linkedin.ba884e1f9ad4362348c1.png",
+    "static/media/instagram.png": "/static/media/instagram.5728b7be45fc143b27b0.png",
+    "index.html": "/index.html",
+    "main.72c7fa8e.css.map": "/static/css/main.72c7fa8e.css.map",
+    "main.2c35567b.js.map": "/static/js/main.2c35567b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72c7fa8e.css",
-    "static/js/main.c889084a.js"
+    "static/js/main.2c35567b.js"
   ]
 }
