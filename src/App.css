@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  background-color: rgb(214, 197, 205) ;
+  height: 123vh;
+}
+
+.App-logo {
+  float: right;
+  width: 33pc;
+  pointer-events: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.socials-logo {
+  float: left;
+  width: 90px;
+  margin: 10px;
+}
+
+.App-header {
+  background-color: rgb(57, 54, 44);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font: 100;
+  font-size: calc(10px + 2vmin);
+  color: rgb(214, 197, 205)
+  ;
+}
+
+.box {
+  float: left;
+  min-width: 55pc;
+  width: 350px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid rgb(118, 92, 155);
+  background-color: rgb(214, 197, 205) ;
+  color: rgb(57, 54, 44);
+  font-family: font-link;
+}
+
+.box1 {
+  float: left;
+  min-width: 24.7pc;
+  width: 350px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid rgb(118, 92, 155);
+  background-color: rgb(214, 197, 205);
+  color: rgb(57, 54, 44) ;
+  text-align: left;  
+}
+
+.box2 {
+  float: left;
+  min-width: 56.3pc;
+  width: 350px;
+  margin: 10px;
+  padding: 25px;
+  background-color: rgb(57, 54, 44) ;
+  font-family: font-link;
+  color: rgb(214, 197, 205);
+}
