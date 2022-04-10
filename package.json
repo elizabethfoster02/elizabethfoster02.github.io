@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/elizabethfoster02/elizabethfoster02.github.io",
+  "homepage": "https://elizabethfoster02.github.io",
 
   "dependencies": {
     "-": "^0.0.1",
