@@ -17,13 +17,12 @@ function App() {
           <span className="font-link">
             <p>
               Hello! I am a sophomore at Tufts University majoring in physics
-              and computer science. I am intered Software Engineering internship
-              for Summer 2023.
+              and computer science. I am interested in software engineering
+              internships for the summer 2023 season.
             </p>
             <p>
-              I currently serve as the Associate Editor of The Tufts Daily and
-              as a software engineering intern at Rooted Farmers. In my free
-              time, I enjoy the outdoors and making music!
+              This fall, I am studying abroad at Queen Mary University in
+              London.
             </p>
           </span>
         </div>
