@@ -12,9 +12,12 @@ function App() {
       <header className="App-header">
         <span className="font-link">Elizabeth Foster</span>
       </header>
-      <div className="grid-container">
+      <div className="grid">
         <div className="box">
           <span className="font-link">
+            {/* <div className="photo"> */}
+            <img src={logo} className="photoImage" alt="logo" />
+            {/* </div> */}
             <p>
               Hello! I am a sophomore at Tufts University majoring in physics
               and computer science. I am interested in software engineering
@@ -27,14 +30,14 @@ function App() {
           </span>
         </div>
 
-        <div className="photoBox">
-          <img src={logo} className="photoImage" alt="logo" />
-        </div>
-
-        <div className="box1">
+        <div className="csCoursesBox">
           <p>
             Computer Science courses:
             <ul>
+              <li>
+                Complexity, Computation and Algorithms (Queen Mary, ECS646)
+              </li>
+              <li>Software Development and Quality (Queen Mary, ECS642)</li>
               <li>Machine Structures and Programming (COMP 40)</li>
               <li>Algorithms (COMP 160)</li>
               <li>Data Structures (COMP 15)</li>
@@ -44,7 +47,7 @@ function App() {
           </p>
         </div>
 
-        <div className="box3">
+        <div className="physicsCoursesBox">
           <p>
             Physics courses:
             <ul>
