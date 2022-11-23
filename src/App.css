@@ -4,7 +4,7 @@
 }
 
 .grid {
-  display: grid;
+  display: flex;
   justify-content: left;
   flex-wrap: wrap;
   max-width: 100pc;
@@ -53,10 +53,8 @@
 }
 
 .box {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  flex: 3;
+  width: 60pc;
 
   margin: 1rem;
   padding: 1.5rem;
@@ -66,51 +64,34 @@
   background-color: rgb(214, 197, 205);
   color: rgb(57, 54, 44);
   font-family: font-link;
+  font-size: small;
 
   display: flex;
   text-align: justify;
 }
 
 .csCoursesBox {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  flex: 1;
+  width: 25pc;
 
   margin: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
 
   border: 1px solid rgb(118, 92, 155);
-  background-color: rgb(214, 197, 205);
   color: rgb(57, 54, 44);
+  font-family: font-link;
+  font-size: small;
   text-align: left;
 }
-
-.physicsCoursesBox {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
-  margin: 1rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  border: 1px solid rgb(118, 92, 155);
-  background-color: rgb(214, 197, 205);
-  color: rgb(57, 54, 44);
-  text-align: left;
-}
-
-/* .photo {
-  border-radius: 50%;
-} */
 
 .box2 {
-  grid-column: 1/4;
-  grid-row: 3/4;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   padding: 25px;
   background-color: rgb(57, 54, 44);
   font-family: font-link;
   color: rgb(214, 197, 205);
+  font-size: large;
 }
