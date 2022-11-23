@@ -11,12 +11,14 @@ function Home() {
         <span className="font-link">
           <img src={logo} className="photoImage" alt="logo" />
           <p>
-            Hello! I am a junior at Tufts University majoring in physics and
-            computer science. I am interested in software engineering
-            internships for the summer 2023 season.
+            Hello! I am a junior at Tufts University majoring in computer
+            science and applied physics. I am excited to share that I will be
+            spending summer 2023 as an Associate Software Engineering Intern at
+            Best Buy at their Richfield, MN campus.
           </p>
           <p>
-            This fall, I am studying abroad at Queen Mary University in London.
+            I've spent this fall studying abroad at Queen Mary University in
+            London.
           </p>
         </span>
       </div>
@@ -25,13 +27,16 @@ function Home() {
         <p>
           Computer Science courses:
           <ul>
-            <li>Complexity, Computation and Algorithms (Queen Mary, ECS646)</li>
-            <li>Software Development and Quality (Queen Mary, ECS642)</li>
+            <li>Quantum Software Development (COMP 150)</li>
+            <li>Operating Systems (COMP 111)</li>
+            <li>Computational Physics (PHY 68)</li>
+            <li>Complexity, Computation and Algorithms (QMUL: ECS646)</li>
+            <li>Software Development and Quality (QMUL: ECS642)</li>
             <li>Machine Structures and Programming (COMP 40)</li>
             <li>Algorithms (COMP 160)</li>
             <li>Data Structures (COMP 15)</li>
             <li>Introduction to Security (COMP 116)</li>
-            <li>Introduction to Quantum Information (COMP 151)</li>
+            <li>Introduction to Quantum Information (COMP 151, PHY 193)</li>
           </ul>
         </p>
       </div>
