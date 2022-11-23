@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./pages/home";
+import Resume from "./pages/resume";
 import Projects from "./pages/projects";
 import Blog from "./pages/blog";
 
@@ -16,6 +17,9 @@ function App() {
           </span>
           <div className="navigation">
             <div className="navigationItem">
+              <Link to="resume">Resume</Link>
+            </div>
+            <div className="navigationItem">
               <Link to="projects">Projects</Link>
             </div>
             <div className="navigationItem">
@@ -26,6 +30,7 @@ function App() {
 
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/resume" element={<Resume />}></Route>
           <Route exact path="/projects" element={<Projects />}></Route>
           <Route exact path="/blog" element={<Blog />}></Route>
         </Routes>

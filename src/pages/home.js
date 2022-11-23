@@ -1,3 +1,5 @@
+import React from "react";
+
 import logo from "../images/headshot.jpeg";
 import github from "../images/25231.png";
 import instagram from "../images/instagram.png";
@@ -24,21 +26,19 @@ function Home() {
       </div>
 
       <div className="csCoursesBox">
-        <p>
-          Computer Science courses:
-          <ul>
-            <li>Quantum Software Development (COMP 150)</li>
-            <li>Operating Systems (COMP 111)</li>
-            <li>Computational Physics (PHY 68)</li>
-            <li>Complexity, Computation and Algorithms (QMUL: ECS646)</li>
-            <li>Software Development and Quality (QMUL: ECS642)</li>
-            <li>Machine Structures and Programming (COMP 40)</li>
-            <li>Algorithms (COMP 160)</li>
-            <li>Data Structures (COMP 15)</li>
-            <li>Introduction to Security (COMP 116)</li>
-            <li>Introduction to Quantum Information (COMP 151, PHY 193)</li>
-          </ul>
-        </p>
+        Computer Science courses:
+        <ul>
+          <li>Quantum Software Development (COMP 150)</li>
+          <li>Operating Systems (COMP 111)</li>
+          <li>Computational Physics (PHY 68)</li>
+          <li>Complexity, Computation and Algorithms (QMUL: ECS646)</li>
+          <li>Software Development and Quality (QMUL: ECS642)</li>
+          <li>Machine Structures and Programming (COMP 40)</li>
+          <li>Algorithms (COMP 160)</li>
+          <li>Data Structures (COMP 15)</li>
+          <li>Introduction to Security (COMP 116)</li>
+          <li>Introduction to Quantum Information (COMP 151, PHY 193)</li>
+        </ul>
       </div>
 
       <div className="box2">
