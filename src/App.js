@@ -17,7 +17,7 @@ function App() {
           </span>
           <div className="navigation">
             <div className="navigationItem">
-              <Link to="resume">Resume</Link>
+              <Link to="resume">Resume!</Link>
             </div>
             <div className="navigationItem">
               <Link to="projects">Projects</Link>
