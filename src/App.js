@@ -1,76 +1,42 @@
-import React from "react";
 import "./App.css";
+import Home from "./pages/home";
+import Resume from "./pages/resume";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import logo from "./images/headshot.jpeg";
-import github from "./images/25231.png";
-import instagram from "./images/instagram.png";
-import linkedin from "./images/linkedin.png";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import ResponsiveAppBar from "./NavBar";
 
 function App() {
+  const theme = createTheme({
+    palette: {
+      primary: {
+        // light: "#757ce8",
+        main: "#AAAE7F",
+        // dark: "#002884",
+        // contrastText: "#fff",
+      },
+      secondary: {
+        // light: "#ff7961",
+        main: "#D0D6B3",
+        // dark: "#ba000d",
+        // contrastText: "#000",
+      },
+    },
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <span className="font-link">Elizabeth Foster</span>
-      </header>
-      <div className="grid-container">
-        <div className="box">
-          <span className="font-link">
-            <p>
-              Hello! I am a sophomore at Tufts University majoring in physics
-              and computer science. I am interested in software engineering
-              internships for the summer 2023 season.
-            </p>
-            <p>
-              This fall, I am studying abroad at Queen Mary University in
-              London.
-            </p>
-          </span>
-        </div>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <ResponsiveAppBar></ResponsiveAppBar>
 
-        <div className="photoBox">
-          <img src={logo} className="photoImage" alt="logo" />
-        </div>
-
-        <div className="box1">
-          <p>
-            Computer Science courses:
-            <ul>
-              <li>Machine Structures and Programming (COMP 40)</li>
-              <li>Algorithms (COMP 160)</li>
-              <li>Data Structures (COMP 15)</li>
-              <li>Introduction to Security (COMP 116)</li>
-              <li>Introduction to Quantum Information (COMP 151)</li>
-            </ul>
-          </p>
-        </div>
-
-        <div className="box3">
-          <p>
-            Physics courses:
-            <ul>
-              <li>Modern Physics (PHY 13)</li>
-              <li>Introduction to Quantum Information (PHY 16)</li>
-              <li>General Physics: Electricity and Magnetism (PHY 12)</li>
-              <li>General Physics: Mechanics (PHY 11)</li>
-            </ul>
-          </p>
-        </div>
-
-        <div className="box2">
-          <span className="font-link">
-            Reach out to me or check out my work below!
-          </span>
-          <a href="https://github.com/elizabethfoster02">
-            <img src={github} className="socials-logo" alt="logo" />
-          </a>
-          <a href="https://www.instagram.com/el1zabeth.foster/">
-            <img src={instagram} className="socials-logo" alt="logo" />
-          </a>
-          <a href="https://www.linkedin.com/in/elizabethfoster02/">
-            <img src={linkedin} className="socials-logo" alt="logo" />
-          </a>
-        </div>
-      </div>
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route exact path="/Resume" element={<Resume />}></Route>
+          </Routes>
+        </Router>
+      </ThemeProvider>
     </div>
   );
 }
