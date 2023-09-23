@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bcc3356.css",
-    "main.js": "/static/js/main.90541ba2.js",
-    "static/js/512.125ea300.chunk.js": "/static/js/512.125ea300.chunk.js",
-    "static/media/headshot.jpeg": "/static/media/headshot.7add7aa398e1c159a0ed.jpeg",
-    "static/media/linkedin.png": "/static/media/linkedin.ba884e1f9ad4362348c1.png",
-    "static/media/instagram.png": "/static/media/instagram.5728b7be45fc143b27b0.png",
+    "main.css": "/static/css/main.d0819b48.css",
+    "main.js": "/static/js/main.f774785c.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/IMG_7644.jpg": "/static/media/IMG_7644.3a68b76607e72bb7f43f.jpg",
+    "static/media/jcwordl.jpg": "/static/media/jcwordl.fa4e273e8c1749bb4688.jpg",
+    "static/media/FosterElizabeth.pdf": "/static/media/FosterElizabeth.5472d21075aeadf01034.pdf",
+    "static/media/Dashboard.png": "/static/media/Dashboard.36c4f20f91a978db2105.png",
+    "static/media/Scheduling 1.png": "/static/media/Scheduling 1.7e4b38b51ebd19b825ff.png",
+    "static/media/FAQ.png": "/static/media/FAQ.ded4302d90c7a2f1b00f.png",
+    "static/media/JustMeAgainDownHere-Regular.ttf": "/static/media/JustMeAgainDownHere-Regular.4873e298adbd7809f3f5.ttf",
     "index.html": "/index.html",
-    "main.5bcc3356.css.map": "/static/css/main.5bcc3356.css.map",
-    "main.90541ba2.js.map": "/static/js/main.90541ba2.js.map",
-    "512.125ea300.chunk.js.map": "/static/js/512.125ea300.chunk.js.map"
+    "main.d0819b48.css.map": "/static/css/main.d0819b48.css.map",
+    "main.f774785c.js.map": "/static/js/main.f774785c.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bcc3356.css",
-    "static/js/main.90541ba2.js"
+    "static/css/main.d0819b48.css",
+    "static/js/main.f774785c.js"
   ]
 }
