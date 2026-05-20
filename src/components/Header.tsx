@@ -1,45 +1,57 @@
-import { NavLink } from 'react-router-dom'
-import { navLinks } from '../data'
+import { Link } from 'react-router-dom'
+import { portfolio, colors } from '../data'
 
-type HeaderProps = {
-  isDark: boolean
-  onToggleTheme: () => void
-}
-
-const Header = ({ isDark, onToggleTheme }: HeaderProps) => (
-  <header className="site-header">
-    <nav className="navbar">
-      <div className="logo">
-        <NavLink to="/">EF</NavLink>
-      </div>
-      <ul className="nav-links">
-        {navLinks.map((link) => (
-          <li key={link.label}>
-            <NavLink
-              to={link.to}
-              className={({ isActive }) => (isActive ? 'active' : undefined)}
-              aria-label={`Navigate to ${link.label}`}
+const Header: React.FC = () => {
+  return (
+    <header
+      className="sticky top-0 z-50 shadow-md"
+      style={{ backgroundColor: colors.darkSlate }}
+    >
+      <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold" style={{ color: colors.coral }}>
+          {portfolio.name}
+        </Link>
+        <ul className="flex gap-8">
+          <li>
+            <Link
+              to="/"
+              className="hover:opacity-80 transition-opacity"
+              style={{ color: colors.offWhite }}
             >
-              {link.label}
-            </NavLink>
+              Home
+            </Link>
           </li>
-        ))}
-      </ul>
-      <button
-        type="button"
-        className="theme-toggle"
-        aria-label="Toggle dark mode"
-        onClick={onToggleTheme}
-        onKeyDown={(event) => {
-          if (event.key === 'Enter') {
-            onToggleTheme()
-          }
-        }}
-      >
-        <span className="theme-icon">{isDark ? '🌙' : '☀️'}</span>
-      </button>
-    </nav>
-  </header>
-)
+          <li>
+            <Link
+              to="/projects"
+              className="hover:opacity-80 transition-opacity"
+              style={{ color: colors.offWhite }}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/experience"
+              className="hover:opacity-80 transition-opacity"
+              style={{ color: colors.offWhite }}
+            >
+              Experience
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/designs"
+              className="hover:opacity-80 transition-opacity"
+              style={{ color: colors.offWhite }}
+            >
+              Designs
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  )
+}
 
 export default Header

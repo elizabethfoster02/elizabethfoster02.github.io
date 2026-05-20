@@ -1,73 +1,91 @@
-# React + TypeScript + Vite
+README.md
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Elizabeth Foster - Portfolio
 
-Currently, two official plugins are available:
+A modern, responsive portfolio website showcasing software engineering work and knitwear designs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Home**: Hero section with introduction and call-to-action buttons
+- **Projects**: Showcase of software development projects with technologies and links
+- **Experience**: Professional work history and career highlights
+- **Designs**: Gallery of hand-crafted knitwear pieces
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Custom Color Scheme**: Professional palette with coral, blue, and slate tones
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js 16+ 
+- npm or yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone the repository
+\`\`\`bash
+git clone https://github.com/elizabethfoster02/elizabethfoster02.github.io.git
+cd elizabethfoster02.github.io
+\`\`\`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. Install dependencies
+\`\`\`bash
+npm install
+\`\`\`
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. Start the development server
+\`\`\`bash
+npm run dev
+\`\`\`
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Available Scripts
+
+- \`npm run dev\` - Start development server
+- \`npm run build\` - Build for production
+- \`npm run preview\` - Preview production build
+- \`npm run lint\` - Run ESLint
+- \`npm run lint:fix\` - Fix ESLint errors
+
+## Color Scheme
+
+- **Dark Slate**: #495867
+- **Muted Blue**: #577399
+- **Light Blue**: #bdd5ea
+- **Off White**: #f7f7ff
+- **Coral**: #fe5f55
+
+## Project Structure
+
+\`\`\`
+src/
+├── components/
+│   ├── Header.tsx
+│   └── Footer.tsx
+├── pages/
+│   ├── Home.tsx
+│   ├── Projects.tsx
+│   ├── Experience.tsx
+│   └── Designs.tsx
+├── App.tsx
+├── data.ts
+├── index.css
+└── main.tsx
+\`\`\`
+
+## Deployment
+
+This project is configured to deploy to GitHub Pages. Build files are output to the \`dist/\` directory.
+
+## License
+
+© 2024 Elizabeth Foster. All rights reserved.

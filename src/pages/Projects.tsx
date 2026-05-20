@@ -1,76 +1,64 @@
-import { Link } from 'react-router-dom'
-import { projects } from '../data'
+import { projects, colors } from '../data'
 
-const Projects = () => (
-  <>
-    <section className="page-header">
-      <div className="section-inner">
-        <h1>Software Projects</h1>
-        <p className="page-subtitle">
-          A collection of full-stack applications, frontend experiences, and creative solutions
+const Projects: React.FC = () => {
+  return (
+    <section className="min-h-screen py-20 px-6" style={{ backgroundColor: '#f7f7ff' }}>
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-5xl font-bold mb-4 text-center" style={{ color: colors.darkSlate }}>
+          Projects
+        </h1>
+        <p className="text-xl text-center mb-16" style={{ color: colors.mutedBlue }}>
+          A selection of my recent work and technical projects
         </p>
-      </div>
-    </section>
 
-    <section className="projects-section">
-      <div className="section-inner">
-        <div className="projects-grid">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <article className="project-card-detailed" key={project.title}>
-              <div className="project-image placeholder-large">
-                <span>Project Preview</span>
-              </div>
-              <div className="project-content">
-                <h3>{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-meta">
-                  <div className="meta-item">
-                    <strong>Technologies:</strong>
-                    <span>{project.tech}</span>
-                  </div>
-                  <div className="meta-item">
-                    <strong>Duration:</strong>
-                    <span>{project.duration}</span>
-                  </div>
-                  <div className="meta-item">
-                    <strong>Role:</strong>
-                    <span>{project.role}</span>
-                  </div>
-                </div>
-                <div className="project-tags">
-                  {project.tags.map((tag) => (
-                    <span className="tag" key={tag}>
-                      {tag}
+            <div
+              key={project.id}
+              className="rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow"
+              style={{ backgroundColor: colors.lightBlue }}
+            >
+              <h3 className="text-2xl font-bold mb-3" style={{ color: colors.darkSlate }}>
+                {project.title}
+              </h3>
+              <p className="mb-4" style={{ color: colors.darkSlate }}>
+                {project.description}
+              </p>
+              <div className="mb-6">
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-sm px-3 py-1 rounded-full"
+                      style={{ backgroundColor: colors.mutedBlue, color: colors.offWhite }}
+                    >
+                      {tech}
                     </span>
                   ))}
                 </div>
-                <div className="project-actions">
-                  <a href="#" className="btn btn-primary btn-small">
-                    View Project
-                  </a>
-                  <a href="#" className="btn btn-secondary btn-small">
-                    GitHub Repository
-                  </a>
-                </div>
               </div>
-            </article>
+              <div className="flex gap-4">
+                <a
+                  href={project.link}
+                  className="flex-1 py-2 px-4 rounded-lg text-center font-semibold transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: colors.coral, color: colors.offWhite }}
+                >
+                  View
+                </a>
+                <a
+                  href={project.github}
+                  className="flex-1 py-2 px-4 rounded-lg text-center font-semibold transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: colors.darkSlate, color: colors.offWhite }}
+                >
+                  Code
+                </a>
+              </div>
+            </div>
           ))}
         </div>
       </div>
     </section>
-
-    <section className="cta-section">
-      <div className="section-inner">
-        <h2>Interested in Collaborating?</h2>
-        <p>
-          I'm always open to exciting projects and creative partnerships. Let's build something amazing together.
-        </p>
-        <Link to="/#contact" className="btn btn-primary">
-          Get In Touch
-        </Link>
-      </div>
-    </section>
-  </>
-)
+  )
+}
 
 export default Projects
