@@ -1,70 +1,258 @@
-# Getting Started with Create React App
+# Elizabeth Foster | Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, professional portfolio website showcasing Elizabeth Foster's work as a software engineer and knitwear designer based in Minneapolis, MN.
 
-## Available Scripts
+## 🎨 Features
 
-In the project directory, you can run:
+- **Responsive Design**: Fully responsive layout that works beautifully on desktop, tablet, and mobile devices
+- **Dark Mode**: Toggle between light and dark themes with persistent user preference
+- **Modern Aesthetics**: Clean, contemporary design with smooth animations and transitions
+- **Multiple Pages**:
+  - **Home** (`index.html`) - Hero section, about, featured projects, and contact
+  - **Projects** (`projects.html`) - Detailed portfolio of software engineering projects
+  - **Designs** (`designs.html`) - Gallery of knitwear designs and patterns
+- **Performance**: Optimized for fast loading and smooth interactions
+- **SEO Friendly**: Proper meta tags and semantic HTML structure
+- **Accessibility**: WCAG compliant with proper ARIA labels and semantic markup
 
-### `npm start`
+## 🛠️ Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with CSS variables and Grid/Flexbox
+- **JavaScript** - Vanilla JS for interactivity (no frameworks required)
+- **Responsive** - Mobile-first design approach
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+/elizabethfoster02.github.io/
+├── index.html              # Main homepage
+├── projects.html           # Software projects portfolio
+├── designs.html            # Knitwear designs gallery
+├── style.css               # Main stylesheet
+├── script.js               # JavaScript functionality
+└── README.md               # This file
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Local Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/elizabethfoster02/elizabethfoster02.github.io.git
+   cd elizabethfoster02.github.io
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Open in your browser**
+   - Open `index.html` directly in your browser, or
+   - Use a local server (recommended for testing):
+     ```bash
+     # Python 3
+     python -m http.server 8000
+     
+     # Python 2
+     python -m SimpleHTTPServer 8000
+     
+     # Node.js
+     npx http-server
+     ```
+   - Navigate to `http://localhost:8000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### GitHub Pages Deployment
 
-### `npm run eject`
+This site is automatically deployed via GitHub Pages when changes are pushed to the `main` branch.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Update content as needed
+2. Commit your changes: `git commit -m "Update portfolio"`
+3. Push to GitHub: `git push origin main`
+4. Visit `https://elizabethfoster02.github.io` to see your changes live
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 Customization Guide
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Update Personal Information
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Email**: In `index.html`, replace `your-email@example.com` with your email address
+2. **Social Links**: Update GitHub, LinkedIn, and Twitter URLs in the contact section
+3. **About Section**: Customize the about text and skills lists
+4. **Project Details**: Fill in your actual projects with descriptions, technologies, and links
 
-## Learn More
+### Add Projects
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Edit `projects.html` and update the project cards:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```html
+<article class="project-card-detailed">
+  <div class="project-image placeholder-large">
+    <span>Your Project Image</span>
+  </div>
+  <div class="project-content">
+    <h3>Your Project Title</h3>
+    <p class="project-description">Your project description...</p>
+    <div class="project-meta">
+      <!-- Update project details -->
+    </div>
+    <!-- Update links -->
+  </div>
+</article>
+```
 
-### Code Splitting
+### Add Knitwear Designs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Edit `designs.html` to add your knit design cards with specifications, materials, and pattern links.
 
-### Analyzing the Bundle Size
+### Customize Colors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Edit the CSS variables in `style.css`:
 
-### Making a Progressive Web App
+```css
+:root {
+  --bg-color: #f4f4f8;
+  --text-color: #222;
+  --primary-color: #1f52ff;
+  --secondary-color: #4a5568;
+  --accent-color: #f59e0b;
+  --section-bg: #ffffff;
+  --border-color: #e2e8f0;
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Add Project Images
 
-### Advanced Configuration
+Replace placeholder images with actual project screenshots:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Save your images in the project directory
+2. Update the image paths in HTML or create styled image containers
 
-### Deployment
+## 🎯 Key Sections
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Home Page (`index.html`)
 
-### `npm run build` fails to minify
+- **Hero Section**: Eye-catching introduction
+- **About Section**: Personal bio and technical/design skills
+- **Highlights Section**: Key capabilities (3 cards)
+- **Featured Projects**: Preview of selected projects
+- **Contact Section**: Email contact form and social links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Projects Page (`projects.html`)
+
+- Detailed project cards with:
+  - Project images
+  - Full descriptions
+  - Technologies used
+  - Duration and role
+  - Links to live projects and repositories
+
+### Designs Page (`designs.html`)
+
+- Knitwear design gallery with:
+  - Design images
+  - Fiber content information
+  - Skill level
+  - Available sizes
+  - Design tags and categories
+  - Design process breakdown (6 steps)
+  - Custom commission CTA
+
+## ✨ Features & Interactivity
+
+### Dark Mode
+- Toggle between light and dark themes
+- Preference saved in browser localStorage
+- Click the theme icon in the header
+
+### Smooth Scrolling
+- Smooth navigation to sections
+- Intersection observer for fade-in animations
+- Mobile-optimized touch interactions
+
+### Contact Form
+- Client-side form handling
+- Opens email client with pre-filled message
+- Form validation
+
+### Responsive Design
+- Breakpoints at 768px and 480px
+- Mobile navigation
+- Touch-friendly interactions
+
+## 🔧 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 📱 Mobile Optimization
+
+- Responsive grid layouts
+- Touch-friendly buttons (min 44px height)
+- Optimized font sizes
+- Mobile-first navigation
+- Properly sized tap targets
+
+## 🎨 Design System
+
+### Color Palette
+
+- **Primary**: #1f52ff (Blue)
+- **Secondary**: #4a5568 (Slate)
+- **Accent**: #f59e0b (Amber)
+- **Background**: #f4f4f8 (Light Gray)
+- **Section**: #ffffff (White)
+
+### Typography
+
+- Font: Inter, system-ui, sans-serif
+- Responsive scaling with `clamp()`
+- Proper line-height for readability
+
+### Spacing
+
+- Consistent padding and margins
+- Grid-based layout system
+- Responsive spacing at breakpoints
+
+## 📊 Performance Optimization
+
+- Minimal external dependencies
+- Optimized CSS and JavaScript
+- Lazy loading ready
+- SVG favicon for instant loading
+- Minimal HTTP requests
+
+## 🚀 Future Enhancements
+
+- [ ] Add blog section for writing
+- [ ] Implement image lazy loading
+- [ ] Add case studies for projects
+- [ ] E-commerce integration for knitwear sales
+- [ ] Blog/articles section
+- [ ] Testimonials section
+- [ ] Newsletter signup
+- [ ] Analytics integration
+
+## 📄 License
+
+This portfolio website is personal property. Feel free to use it as inspiration for your own portfolio!
+
+## 🤝 Contributing
+
+Suggestions and improvements are welcome! Please feel free to:
+
+1. Report bugs
+2. Suggest new features
+3. Improve documentation
+
+## 📧 Contact
+
+For inquiries about collaborations or commissions:
+
+- Email: your-email@example.com
+- GitHub: [@elizabethfoster02](https://github.com/elizabethfoster02)
+- Website: [elizabethfoster02.github.io](https://elizabethfoster02.github.io)
+
+---
+
+**Handcrafted with ❤️ in Minneapolis, MN**
